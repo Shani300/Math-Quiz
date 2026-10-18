@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script defer src="index.js"></script>
+    <style>
+        body{
+            background: linear-gradient(to right, #5cdb95, #05386b);
+            justify-items: center;
+            font-size: 30px;
+        }
+        .head{
+            display: flex;
+            gap:3px;
+            font-size:25px;
+
+        }
+        #what{
+            display: flex;
+            gap:10px;
+        }
+        #options{
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+        }
+        button{
+            background-color: lightgray;
+            text-align: center;
+            width:200px;
+            padding:10px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color:rgb(164, 164, 164);
+        }
+        section{
+            background-color: rgb(255, 255, 255);
+            display: grid;
+            border-radius: 20px;
+            place-content: center;
+            width:80vw;
+            padding:50px;
+            gap:15px
+        }
+        #timerText{
+            display: flex;
+            gap:10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div id="timerText">Time left: <div id="timer">5</div></div>
+    <h1>Math Quiz</h1>
+    <div class="head">Question <div id="numberQ">1</div>/10</div>
+    <div id="what">What is <div id="targil"></div>?</div>
+    <div id="options">
+        <button id="opt1"></button>
+        <button id="opt2"></button>
+        <button id="opt3"></button>
+        <button id="opt4"></button>
+    </div>
+</section>
+</body>
+</html>

@@ -90,7 +90,7 @@ function finishGame(){
     const message=document.createElement("div")
     message.textContent="מספר התשובות הנכונות "+succsed.toString()+"\nתשובות שגויות "+ "  "+lose.toString()
     const restart=document.createElement("button")
-    restart.textContent="האם אתה רוצה לשחק שוב?"
+    restart.textContent="האם ברצונך רוצה לשחק שוב?"
     const sec=document.querySelector("section")
     sec.append(message)
     sec.append(restart)
